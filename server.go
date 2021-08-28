@@ -38,5 +38,4 @@ func main() {
 		fmt.Println("Environment Port : " + port)
 		router.Run(":" + port)
 	}
-	
 }
