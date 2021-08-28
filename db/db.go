@@ -21,7 +21,7 @@ func SetupDB() {
 	// database, err := gorm.Open(sqlite.Open("database.db"), &gorm.Config{})
 
 	// mysql "gorm.io/driver/mysql"
-	dsn := "prinpt_dcscore:eQ6hmoOJVsir@tcp(156.67.219.130)/prinpt_dcscore?charset=utf8mb4&parseTime=True"
+	dsn := "prinpt_dcscore:eQ6hmoOJVsir@tcp(http://156.67.219.130)/prinpt_dcscore?charset=utf8mb4&parseTime=True&loc=Local"
 	database, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	// postgresql 	"gorm.io/driver/postgres"
