@@ -35,8 +35,8 @@ func SetupDB() {
 	// database.AutoMigrate(&model.User{})
 	// database.AutoMigrate(&model.Product{})
 	// database.AutoMigrate(&model.Transaction{})
-	database.AutoMigrate(&model.Score{})
-	database.AutoMigrate(&model.Month{})
+	// database.AutoMigrate(&model.Score{})
+	// database.AutoMigrate(&model.Month{})
 
 	db = database
 }
