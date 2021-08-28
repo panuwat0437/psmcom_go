@@ -30,20 +30,13 @@ func main() {
 	// router.Run(":8081")
 
 	// In case of running on Heroku
-	// var port = os.Getenv("PORT")
-	// if port == "" {
-	// 	fmt.Println("Running on Heroku using random PORT")
-	// 	router.Run()
-	// } else {
-	// 	fmt.Println("Environment Port : " + port)
-	// 	router.Run(":" + port)
-	// }
-	port, ok := os.LookupEnv("PORT")
-
-    if ok == false {
-        port = "3000"
-    }
-
-    app.Run(":"+port)
+	var port = os.Getenv("PORT")
+	if port == "" {
+		fmt.Println("Running on Heroku using random PORT")
+		router.Run()
+	} else {
+		fmt.Println("Environment Port : " + port)
+		router.Run(":" + port)
+	}
 	
 }
